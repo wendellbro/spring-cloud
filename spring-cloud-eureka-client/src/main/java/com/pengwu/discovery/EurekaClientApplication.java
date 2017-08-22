@@ -10,9 +10,9 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  */
 @SpringBootApplication
 @EnableDiscoveryClient	//@EnableDiscoveryClient注解，能激活Eureka中的DiscoveryClient实现，这样才能实现Controller中对服务信息的输出。
-public class Application {
+public class EurekaClientApplication {
     public static void main(String[] args) {
-        new SpringApplicationBuilder(Application.class)
+        new SpringApplicationBuilder(EurekaClientApplication.class)
         		.web(true).run(args);
     }
 }
