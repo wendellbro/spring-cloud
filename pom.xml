@@ -18,12 +18,16 @@
 	</properties>
 
 	<modules>
-		<module>eureka-server</module>
-		<module>eureka-provider</module>
-		<module>eureka-provider2</module>
+		<module>eureka-server-peer1</module>
+		<module>eureka-server-peer2</module>
+		<module>eureka-server-peer3</module>
+		<module>eureka-provider-peer1</module>
+		<module>eureka-provider-peer2</module>
 		<module>eureka-consumer</module>
 		<module>eureka-consumer-ribbon</module>
 		<module>eureka-consumer-feign</module>
+		<module>eureka-consumer-feign-hystrix</module>
+		<module>eureka-consumer-feign-hystrix-dashboard</module>
 	</modules>
 
 	<dependencyManagement>
@@ -39,17 +43,9 @@
 	</dependencyManagement>
 
 	<dependencies>
-		<!-- <dependency>
+		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-eureka</artifactId>
-		</dependency> -->
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-commons</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
