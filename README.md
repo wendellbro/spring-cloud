@@ -2,9 +2,8 @@
 spring cloud examples
 
 
-Spring cloud Eureka 服务治理(高可用服务中心)
-Eureka Server 的高可用实际上就是将自己作为服务向其它服务注册中心注册自己，这样就形成了一组互相注册的服务中心，
-以实现服务清单 的互相同步，达到高可用的效果。
+Spring cloud Eureka 服务治理(高可用服务中心) 
+Eureka Server 的高可用实际上就是将自己作为服务向其它服务注册中心注册自己，这样就形成了一组互相注册的服务中心，以实现服务清单 的互相同步，达到高可用的效果。
 
 #三个Eureka server节点的实例主机名需要不一样，否则注册不成功
 eureka.instance.hostname=peer1
