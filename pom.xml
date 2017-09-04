@@ -15,6 +15,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<springfox.version>2.2.2</springfox.version>
 	</properties>
 
 	<modules>
@@ -28,7 +29,16 @@
 		<module>eureka-consumer-feign</module>
 		<module>eureka-consumer-feign-hystrix</module>
 		<module>eureka-consumer-feign-hystrix-dashboard</module>
+		<module>eureka-gateway-zuul</module>
 	</modules>
+	
+	<repositories>
+        <repository>
+            <id>nexus-aliyun</id>
+			<name>Nexus aliyun</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+        </repository>
+    </repositories>
 
 	<dependencyManagement>
 		<dependencies>
@@ -56,6 +66,18 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<optional>true</optional>
 		</dependency>
+		
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>${springfox.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>${springfox.version}</version>
+		</dependency>
+		
 	</dependencies>
 
 </project>
