@@ -11,6 +11,11 @@ public class DcController {
 	@Autowired
 	DiscoveryClient discoveryClient;
 	
+	@GetMapping("/")
+	public String index() throws InterruptedException {
+		return "index";
+	}
+	
 	@GetMapping("/dc")
 	public String dc() throws InterruptedException {
 		String services = "Services: " + discoveryClient.getServices()+" -- client2";
