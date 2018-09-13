@@ -14,3 +14,7 @@ eureka.instance.hostname=peer3
 C:/windows/system32/drivers/etc找到hosts文件
 #添加主机名
 127.0.0.1 peer1 peer2 peer3  
+
+
+##business-gateway
+针对web请求的独立网关，未与注册中心集成，可独立部署，包含：session、token防重等处理；
